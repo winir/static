@@ -4,7 +4,7 @@
 $(document).ready(function() {
 
 	console.log('start ready')
-	alert("Ready);
+	alert("Ready");
 
   
 });//end function
