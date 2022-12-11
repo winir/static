@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 
-<!-- index.html written by Ron Irwin 2022. -->
+<!-- 
+index.html
+written by Ron Irwin 2017, 2020, 2022.
+ -->
+
+
 <html lang="en">
 
 <head>
-	<title>Test Web SIte</title>
+	<title>Rons Blog</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
+	<script src="libs/jquery_min.js"></script>		
+		<!-- Latest bootstrap compiled and minified JS and CSS -->	
 	<script src="libs//bootstrap_min.js"></script>
 	<link rel="stylesheet" href="css\bootstrap_min.css">
-
-	<!-- jquery -->
-	<script src="libs/jquery_min.js"></script>	
-	
-	 	
-
-	<!-- custom css	
 	<link rel="stylesheet" href="css\style.css">
- 	-->
-	
+
+
+	<!-- immediate load templates - keep this code
+<script> 
+	$(function(){		
+	  $("#frame").load("templates/blog_form.html"); 
+	});
+</script>  -->
+
+
+	<!-- load modules-->	
+	<script src="modules/status_mod.js"></script>
+	<script src="modules/user_log_mod.js"></script>
+	<script src="modules/logger_mod.js"></script>	
+	<script src="modules/blog_form_mod.js"></script>
+	<script src="modules/ajax_mod.js"></script>	
+
 </head>
 
 <body>
 
-<!--header-->
-<div id="header">Header</div>
-	
-<!-- main menu-->
-<div id='main_menu' class="nav">Main Menu</div>
+<div id='frame' class="grid-container"></div><hr>
 
-<!--main content frame-->
-<div class="container" id="content" >Content</div>
+<div id="alldata">the results go here</div>
 
-<!--footer-->
-<div id="footer">Footer</div>
 
 </body>
 
-	<script src="start.js"></script>
+
+
+<script src="start.js"></script>
 
 </html>
