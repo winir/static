@@ -1,0 +1,133 @@
+/*style.css 
+written by Ron Irwin 2023.*/
+
+
+
+.grid-container {
+  	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	/*grid-gap: 0px;
+	grid-column: 1 / span 2;
+	border: 20px solid green;*/
+	grid-gap: 2px;
+	overflow-y:scroll; 
+	overflow-x:hidden; 
+	height:750px;
+	margin-top: 85px;
+	padding: 2px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  /*border: 2px solid red;*/
+  text-align: left;
+  font-size: 25px;
+  margin-left: 10px;
+ 
+}
+
+
+/* grid styles
+.grid {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 10px;
+  }
+
+.grid-item {
+	background-color: #f2f2f2;
+	padding: 2px;
+	border: red solid 2px;
+  }*/
+
+ /* Style the sticky header template*/
+ #t_header {
+	padding: 10px 16px;
+	background: #555;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-family: 'Courier New', Courier, monospace;
+	position: fixed;
+	top: 0;
+	width: 100%
+  }
+  
+  /* Page content */
+#_content_frame {
+	border: 5px solid blue;
+	background-color: rgb(220, 229, 240);
+	height: 600px; /*fixed for single page app*/
+	padding: 16px;
+  }
+  
+    
+/* style the sticky footer template*/
+#t_footer {
+	font-size: 20px;
+	font-family: 'Courier New', Courier, monospace;
+	color: gray;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+
+/* main styles*/
+body { background-color: rgb(220, 229, 240);
+}
+
+#main_navbar {
+	border: 1px solid blue;
+	position: absolute;
+	top: 0px;
+}
+
+.image-container {
+	position: relative;
+}
+
+.text {
+	color: gainsboro;
+	padding-top: 60px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+	
+.image-container .after {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 20%;
+    height: 90%;
+    display: none;
+}
+
+.image-container .after {
+    display: block;
+    background: rgba(0, 0, 0, .6);
+}
+
+.box {
+	border: 2px solid blue;
+	background-color: rgb(220, 229, 240);
+	width: fit-content;
+}
+
+#controls {
+	border: 2px solid red;
+	padding: 5px;
+	width: fit-content;
+}
+
+#blog_form {
+	border: 2px solid blue;
+	background-color: rgb(220, 229, 240);
+	width: fit-content;
+}
+
+#alldata {
+	margin-top: 20px;
+}
+

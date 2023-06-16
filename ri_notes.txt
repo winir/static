@@ -1,0 +1,20 @@
+
+on load index.html
+
+read in a list of pdf files
+
+create a dynamic list of pdf files most recent on top
+
+show in a grid
+
+make each entry clickable to show pdf in a new tab
+
+upload next blog pdf file and the updated list to github static web site
+
+inject <h2>14 June 2023</h2>
+    	<p>Open blog <a href="blogs/Test%20Blog.pdf">here</a>.</p>
+	</div>
+into the index.html blog file grid
+
+
+
