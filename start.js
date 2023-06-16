@@ -43,11 +43,11 @@ $(document).ready(function() {
 
         var data = allLines[i].split(',');    
 
-        var link = $('<a>').attr('href', data[0]).text(data[0]);//file.pdf   
+        var link = $('<a>').attr('href', data[0]).text("read-blog.");//file.pdf   
         var title=data[3];
         var author=data[2];
         var datex=data[1];
-        var lineitem='Date: '+datex+'  | Author: '+author+'  | Title: '+ title+' | -- '; 
+        var lineitem='<b>Date:</b> '+datex+'  | <b>Author:</b> '+author+'  | <b>Title:</b> '+ title+' | '; 
         
         //var paragraph = $('<p>').text('Click here:').append(lineitem, link);
         var gridItem = $('<div>').addClass('grid-item').append(lineitem, link);
@@ -64,34 +64,6 @@ $(document).ready(function() {
             $("#footer").html(data);
         }
     }); // end 
-
-
-const username = 'winir';
-const password = '44081810';
-
-async function loginToGitHub() {
-  try {
-    const response = await fetch('https://api.github.com/users', {
-      method: 'GET',
-      headers: {
-        'Authorization': `Basic ${btoa(`${username}:${password}`)}`
-      }
-    });
-
-    if (response.status === 200) {
-      const userData = await response.json();
-      console.log('Login successful!');
-      console.log('User data:', userData);
-    } else {
-      console.log('Login failed. Invalid credentials.');
-    }
-  } catch (error) {
-    console.log('An error occurred while logging in:', error);
-  }
-}
-
-loginToGitHub();
-
 
 
   }); // end document ready
