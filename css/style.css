@@ -6,15 +6,15 @@ written by Ron Irwin 2023.*/
 .grid-container {
   	display: grid;
 	grid-template-columns: repeat(1, 1fr);
-	/*grid-gap: 0px;
-	grid-column: 1 / span 2;
+	grid-template-rows:40px;/*grid row height*/
+	/*grid-column: 1 / span 2;
 	border: 20px solid green;*/
-	grid-gap: 2px;
+	grid-gap: 20px;
 	overflow-y:scroll; 
 	overflow-x:hidden; 
-	height:750px;
-	margin-top: 85px;
-	padding: 2px;
+	height:750px;/*height of grid container*/
+	margin-top: 100px;/*first row from header*/
+	padding-left: 2px;
 }
 
 .grid-container > div {
@@ -22,10 +22,21 @@ written by Ron Irwin 2023.*/
   /*border: 2px solid red;*/
   text-align: left;
   font-size: 25px;
-  margin-left: 10px;
- 
+  margin-left: 10px; 
+  padding-left: 5px;
 }
 
+#title {
+	color: rgb(46, 57, 87);
+}
+
+#author {
+	color: rgb(57, 57, 238);
+}
+
+#link {
+	color:firebrick;
+}
 
 /* grid styles
 .grid {
