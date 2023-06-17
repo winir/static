@@ -1,7 +1,6 @@
 
 // start.js
 // written by Ron Irwin June  © 2023.
-//
 
 
 
@@ -44,9 +43,9 @@ $(document).ready(function() {
 
         var data = allLines[i].split(',');    
 
-        var link = $('<a>').attr('href', data[0]).text("read-blog.");//file.pdf   
-        var title=data[3];
-        var author=data[2];
+        var link = $("<a id='link'>").attr('href', data[0]).text("read-it-here.");//file.pdf   
+        var title="<i id='title'>"+data[3]+"</i>";
+        var author="<i id='author'>"+data[2]+"</i>";
         var datex=data[1];
         var lineitem='<b>Date:</b> '+datex+'  | <b>Author:</b> '+author+'  | <b>Title:</b> '+ title+' | '; 
         
